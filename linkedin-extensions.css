@@ -20,12 +20,11 @@
 }
 
 /* Custom size for Resume Section Company Logos */
-.resume-item .company-logo {
-  width: 24px; /* Matches the size of standard template icons */
-  height: 24px;
-  object-fit: contain; /* Prevents the image from stretching or squishing */
-  margin-bottom: 8px; /* Adds breathing room between the logo and the job title */
-  display: block; 
+.linkedin-style-logo .company-logo {
+  width: 48px; 
+  height: 48px;
+  object-fit: contain; 
+  display: block;
 }
 
 /* Flawless layout rule for default SVG icons */
