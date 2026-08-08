@@ -1,0 +1,35 @@
+/* Container alignment for resume entries with placeholder icons */
+.resume-item-with-icon {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Wrapper mimicking LinkedIn's default square gray logo container */
+.linkedin-style-logo {
+  width: 48px;
+  height: 48px;
+  background-color: #f3f2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 16px;
+  border-radius: 4px;
+}
+
+/* Text wrapper to ensure lists and headers take up remaining space */
+.resume-content-block {
+  flex-grow: 1;
+}
+
+/* Optional styling tweak to make repository links look clean and recognizable */
+.resume-content-block a {
+  color: #0a66c2; /* LinkedIn Blue */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.resume-content-block a:hover {
+  text-decoration: underline;
+}
