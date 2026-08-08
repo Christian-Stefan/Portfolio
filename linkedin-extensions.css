@@ -21,8 +21,8 @@
 
 /* Flawless layout rule for custom brand images */
 .company-logo-img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;   /* Fills the 36px box edge-to-edge for solid icons like KEENFINITY */
 }
 
