@@ -21,8 +21,8 @@
 
 /* Custom size for Resume Section Company Logos */
 .linkedin-style-logo .company-logo {
-  width: 48px; 
-  height: 48px;
+  width: 24px;  /* Downscaled from 48px to perfectly match the default SVG */
+  height: 24px;
   object-fit: contain; 
   display: block;
 }
