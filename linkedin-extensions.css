@@ -33,3 +33,11 @@
 .resume-content-block a:hover {
   text-decoration: underline;
 }
+/* Keeps company logo imagery beautifully framed within the 48px box */
+.company-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Prevents logos from squishing, warping, or stretching */
+  border-radius: 4px;  /* Smooths edges of the brand images */
+}
+
