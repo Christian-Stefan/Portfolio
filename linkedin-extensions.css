@@ -1,43 +1,38 @@
-/* Container alignment for resume entries with placeholder icons */
+/* Container alignment for resume entries */
 .resume-item-with-icon {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
-/* Wrapper mimicking LinkedIn's default square gray logo container */
+/* Updated logo container to match the footprint of LinkedIn's native placeholder */
 .linkedin-style-logo {
-  width: 48px;
-  height: 48px;
+  width: 36px;          /* Scaled down to match the smaller visual footprint */
+  height: 36px;         /* Scaled down to match the smaller visual footprint */
   background-color: #f3f2ef;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-right: 16px;
+  margin-right: 14px;
   border-radius: 4px;
+  overflow: hidden;    /* Clips any stray edges */
 }
 
-/* Text wrapper to ensure lists and headers take up remaining space */
-.resume-content-block {
-  flex-grow: 1;
-}
-
-/* Optional styling tweak to make repository links look clean and recognizable */
-.resume-content-block a {
-  color: #0a66c2; /* LinkedIn Blue */
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.resume-content-block a:hover {
-  text-decoration: underline;
-}
-/* Keeps company logo imagery beautifully framed within the 48px box */
+/* Flawless layout rule for custom brand images */
 .company-logo-img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Prevents logos from squishing, warping, or stretching */
-  border-radius: 4px;  /* Smooths edges of the brand images */
+  object-fit: cover;   /* Fills the 36px box edge-to-edge for solid icons like KEENFINITY */
 }
 
+/* Flawless layout rule for default SVG icons */
+.linkedin-style-logo svg {
+  width: 24px;         /* Preserves the built-in breathing room for default vectors */
+  height: 24px;
+}
+
+/* Text block tracking */
+.resume-content-block {
+  flex-grow: 1;
+}
